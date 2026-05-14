@@ -1,0 +1,200 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rupa Portfolio</title>
+    <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="outer-bg">   <!-- Thulo background -->
+
+    <div class="main-card"> 
+
+        <!-- NAVBAR -->
+<nav class="top-links">
+    <a href="#projects">My Projects</a>
+    <a href="#resume">My Resume</a>
+</nav>
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-image">
+            <img src="{% static 'portfolio/images/profile.jpg' %}" alt="Profile">
+        </div>
+
+        <div class="hero-text">
+            <h1>Hello, I'm Rupa</h1>
+            <h3>Web Engineer based in Japan</h3>
+            <p>Building clean & user-friendly web applications.</p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#" class="btn-secondary">View Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Me</h2>
+    <p class="intro">Hello, I am Rupa, a Beginner Web Engineer.</p>
+
+    <div class="about-box">
+        <p>
+            I am an IT student currently studying Global IT at a Japanese vocational school.
+            I have one year of experience learning web development and backend technologies.
+        </p>
+
+        <p>
+            I have practical experience with Python, Django, Flask, PostgreSQL,
+            HTML, CSS, and JavaScript. Recently, I have also been learning React
+            to improve my frontend development skills.
+        </p>
+
+        <p>
+            I enjoy learning new technologies and working on team projects.
+            My goal is to become a professional Web Engineer who can contribute
+            to company growth through continuous learning and strong technical skills.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill python">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+        </div>
+
+        <div class="skill django">
+            <i class="fas fa-leaf"></i>
+            <span>Django</span>
+        </div>
+
+        <div class="skill html">
+            <i class="fab fa-html5"></i>
+            <span>HTML</span>
+        </div>
+
+        <div class="skill css">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS</span>
+        </div>
+
+        <div class="skill postgres">
+    <i class="fas fa-database"></i>
+    <span>PostgreSQL</span>
+</div>
+
+<div class="skill github">
+    <i class="fab fa-github"></i>
+    <span>GitHub</span>
+</div>
+<div class="skill ux-ui">
+    <i class="fas fa-layer-group"></i>
+    <span>UX/UI </span>
+</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-section">
+    <h2>My Projects</h2>
+
+    <div class="projects-container">
+
+ <!-- Project 1 : Library -->
+        <div class="project-card">
+
+            <a href="https://github.com/fina202568-oss/library_project-1t" target="_blank">
+                <img src="{%  static 'portfolio/images/library_project.jpg' %}" alt="Library Project">
+            </a>
+
+            <h3>Library Management System</h3>
+            <p>Django + PostgreSQL based library system.</p>
+
+            <div class="project-buttons">
+                <a href="https://github.com/fina202568-oss/library_project-1t" target="_blank" class="btn-live">
+                    Live Demo
+                </a>
+
+                <a href="https://github.com/fina202568-oss/library_project-1t" target="_blank" class="btn-github">
+                    <i class="fab fa-github"></i> Github Code
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Task Manager App</h3>
+            <p>Todo list & user auth.</p>
+
+            <div class="project-buttons">
+                <a href="#" class="btn-live">Live Demo</a>
+                <a href="#" class="btn-github">
+                    <i class="fab fa-github"></i> Github Code
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>Blog Website</h3>
+            <p>Django blog system.</p>
+
+            <div class="project-buttons">
+                <a href="#" class="btn-live">Live Demo</a>
+                <a href="#" class="btn-github">
+                    <i class="fab fa-github"></i> Github Code
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- RESUME -->
+<section class="resume">
+    <h2>View My Resume</h2>
+    <a href="#" class="btn-primary">View Resume (PDF)</a>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:fulkumarichauhan420@gmail.com">
+                fulkumarichauhan420@gmail.com
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-facebook"></i>
+            <a href="https://facebook.com/FullKumari" target="_blank">
+            FullKumari
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <a href="https://instagram.com/rupachauhan298" target="_blank">
+            rupachauhan298
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</div>
+</div>
+</body>
+</html>
